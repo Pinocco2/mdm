@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форми для перевірки</title>
+</head>
+<body>
+
+    <h2>Вибір напою</h2>
+    <select id="drinkSelect" onchange="selectDrink()">
+        <option value="">Виберіть напій</option>
+        <option value="кава">Кава</option>
+        <option value="чай">Чай</option>
+        <option value="сік">Сік</option>
+    </select>
+    <div id="drinkMessage"></div>
+
+    <h2>Перевірка дня тижня</h2>
+    <input type="text" id="dayInput" placeholder="Введіть день тижня">
+    <button onclick="checkDay()">Перевірити</button>
+    <div id="dayMessage"></div>
+
+    <h2>Перевірка пори року</h2>
+    <input type="number" id="monthInput" placeholder="Введіть номер місяця (1-12)">
+    <button onclick="checkSeason()">Перевірити</button>
+    <div id="seasonMessage"></div>
+
+    <h2>Кількість днів у місяці</h2>
+    <input type="number" id="daysInput" placeholder="Введіть номер місяця (1-12)">
+    <button onclick="checkDaysInMonth()">Перевірити</button>
+    <div id="daysMessage"></div>
+
+    <h2>Перевірка кольору</h2>
+    <input type="text" id="colorInput" placeholder="Введіть колір">
+    <button onclick="checkColor()">Перевірити</button>
+    <div id="colorMessage"></div>
+
+    <h2>Арифметичні операції</h2>
+    <input type="number" id="number1" placeholder="Перше число">
+    <input type="number" id="number2" placeholder="Друге число">
+    <select id="operationSelect">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <button onclick="calculate()">Обчислити</button>
+    <div id="calcMessage"></div>
+    <script src="script.js" defer></script>
+</body>
+</html>
